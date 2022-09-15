@@ -41,12 +41,14 @@
 </head>
 
 <body>
-	<div id="nav-wrapper">
+	<div id="nav-wrapper" >
 		<nav id="nav">
-		  <div class="nav left" id="leftt">
+		  <div class="nav left" id="leftt" style="position: relative;">
 			<span class="gradient skew"><h1 class="logo un-skew"><a href="index.html">Robin Singh</a></h1></span>
-			<!-- <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button> -->
+			<button id="menu" class="btn-nav" onclick="set()"><span class="fas fa-bars"></span></button>
+			
 		  </div>
+		  
 		  <div class="nav right" id="rightt">
 		
 			<a href="#fh5co-header" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Home</span></span></a>
@@ -58,8 +60,16 @@
 			
 		</div>
 		</nav>
+		
 	</div>
-
+	<div id="navb" onclick="hide()">
+		<a href="">Home</a>
+		<a href="#fh5co-about">About</a>
+		<a href="#fh5co-resume">Resume</a>
+		<a href="#fh5co-skills">Skills</a>
+		<a href="#fh5co-blog">Projects</a>
+		<a href="#fh5co-started">Contact</a>
+	</div>
 
 
 	<div class="fh5co-loader" id="ripple"></div>
@@ -76,16 +86,7 @@
 				<div class="row">
 					
 					<div class="col-md-8 col-md-offset-2 text-center">
-						<!-- <div id="navb" style="border: 1px solid red">
-							<a href="">home</a>
-							<a href="#about">About</a>
-							<a href="#fh5co-blog">Projects</a>
-							<a href="#fh5co-started">Contact</a>
-							<a href="#fh5co-skills">Skills</a>
-							<a href="#educt">Education</a>
-							<a href="#fh5co-resume">Resume</a>
-							
-						</div> -->
+						
 
 					
 						<div class="display-t js-fullheight">
@@ -107,7 +108,7 @@
 									</p>
 								</div>
 								<div  class="profiler" >
-								<img style="width: 50%; height: 100%;" src="./Polish_20220911_153601291.png" alt=""></div>
+								<img style="width: 70%; height: 100%;" src="./20200312_121319_143-01_prev_ui.png" alt=""></div>
 
 								
 							</div>
@@ -292,7 +293,7 @@
 				<div class="row robin" >
 					<div class="col-md-4">
 						<div class="fh5co-blog animate-box">
-							<a href="#" class="blog-bg" style="background-image: url(SUGAR-Cosmetics-Logo.jpg);margin: auto;width: 90%;margin-top: -10vh;
+							<a href="https://stunning-biscochitos-96bb56.netlify.app/" target="_blank" class="blog-bg" style="background-image: url(SUGAR-Cosmetics-Logo.jpg);margin: auto;width: 90%;margin-top: -10vh;
 							height: 35vh; border: 1px solid black;background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;" ></a>
@@ -313,7 +314,7 @@
 					</div>
 					<div class="col-md-4">
 						<div class="fh5co-blog animate-box">
-							<a href="#" class="blog-bg"
+							<a href="https://frolicking-moxie-feacd6.netlify.app/" target="_blank" class="blog-bg"
 								style="background-image: url(geekbuying-discount-code.png);background-repeat: no-repeat;
 								background-position: center center;margin: auto;
 								background-size: 100% 100%;width: 90%;margin-top: -10vh;object-fit: cover;
@@ -334,7 +335,7 @@
 					</div>
 					<div class="col-md-4">
 						<div class="fh5co-blog animate-box" >
-							<a href="#" class="blog-bg"
+							<a href="https://bufferr.netlify.app/" target="_blank" class="blog-bg"
 								style="background-image: url(buffer-inc-vector-logo.png);background-repeat: no-repeat;
 								background-position: center center;margin: auto;
 								background-size: 100% 100%;width: 90%;margin-top: -10vh;
@@ -503,6 +504,14 @@ function typeWriter1() {
   }
   
 }
+function set(){
+	console.log("robin")
+	document.getElementById("navb").style.display = document.getElementById("navb").style.display == "block"?"none":"block"
+}
+function hide(){
+	document.querySelector("#navb").style.display="none"
+}
+
 
 $('ripple').ripples({
 	resolution:512,
