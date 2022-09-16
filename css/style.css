@@ -1395,7 +1395,7 @@ input[type="text"] {
   background-color: white;
  }
  .profiler{
-  position: absolute;right:-40%;top:  25%;width: 100%;
+  position: absolute;right:-40%;top:  20%;width: 100%;
 }
  @media (max-width: 558px) {
   .profiler {
@@ -1403,7 +1403,7 @@ input[type="text"] {
     position: absolute;right:-20%;top:5%;width: 100%;
   }
 }
-@media (max-width: 438px) {
+@media (max-width: 400px) {
   .profiler {
     
     position: absolute;right:0%;top:5%;width: 100%;
@@ -1412,7 +1412,7 @@ input[type="text"] {
 @media (max-width: 338px) {
   .profiler {
     
-    position: absolute;right:-10%;top:8%;width: 120%;height: 30vh;
+    position: absolute;right:-10%;top:5%;width: 120%;height: 30vh;
   }
 }
 
