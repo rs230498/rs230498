@@ -22,7 +22,7 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" /> -->
-
+	<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -273,6 +273,15 @@
 					</div>
 					
 					
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Github Stats</h2>
+					</div>
+				</div>
+				<div  class="calendar">
+					<!-- Loading stuff -->
+					Loading the data just for you.
 				</div>
 			
 			</div>
@@ -564,7 +573,7 @@
 	<script src="js/main.js"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
-
+	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 </body>
 
 </html>
@@ -619,5 +628,18 @@ $('ripple').ripples({
 	dropRadius:20,
 	perturbance:0.04,
 })
+
+
+GitHubCalendar(".calendar", "rs230498");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "rs230498");
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "rs230498", {
+       proxy (rs230498) {
+         return fetch(`https://your-proxy.com/github?user=${rs230498}`)
+       }
+    })
 </script>
 <script src="https://kit.fontawesome.com/f7959f43bc.js" crossorigin="anonymous"></script>

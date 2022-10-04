@@ -1416,3 +1416,13 @@ input[type="text"] {
   }
 }
 
+.calendar{
+  width: 100%;margin: auto; margin-top: -10vh;border: 1px solid black;display: inline-block;
+  
+}
+@media (max-width: 480px) {
+  .calendar {
+    width: 100vw;
+  }
+}
+
